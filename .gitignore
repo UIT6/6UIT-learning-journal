@@ -1,24 +1,41 @@
-# Compiled class file
-*.class
+# =====================
+# ☕ Java 编译输出相关
+# =====================
+*.class                  # 编译后的字节码文件
+*.jar                    # Java 打包文件
+*.war
+*.ear
 
-# Log file
-*.log
+# =====================
+# 📄 日志和临时文件
+# =====================
+*.log                    # 日志文件
+*.ctxt                   # BlueJ 临时文件
+hs_err_pid*              # Java虚拟机崩溃日志
+replay_pid*              # JVM 重放日志
 
-# BlueJ files
-*.ctxt
+# =====================
+# 📦 打包压缩类
+# =====================
+*.zip
+*.tar.gz
+*.rar
+*.nar
+
+# =====================
+# 🛠️ IDE 工具相关
+# =====================
+# VSCode
+.vscode/                 # VSCode 工作区配置目录
+
+# IntelliJ IDEA / Android Studio
+.idea/
+*.iml
 
 # Mobile Tools for Java (J2ME)
 .mtj.tmp/
 
-# Package Files #
-*.jar
-*.war
-*.nar
-*.ear
-*.zip
-*.tar.gz
-*.rar
-
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
-replay_pid*
+# =====================
+# 🔒 敏感文件（如上传GitHub）
+# =====================
+*.env                    # 未来如写项目可能含密码的配置
