@@ -69,6 +69,6 @@ public class Main {
 
 ---
 
-### 细节规范细节 | Code Style Tips
+## 细节规范细节 | Code Style Tips
 - 使用 `sc.hasNextInt()` 而不是 `sc.hasNext()`，更严谨，避免非整数输入导致异常。
 - 处理完输入后记得调用 `sc.close()`，是良好的资源管理习惯。
