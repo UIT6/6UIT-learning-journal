@@ -67,6 +67,7 @@ public class Main {
 - 特别注意：**遇到0要直接结束，不做任何计算**。
 - `if (i == 0) { break; }` 是一个非常典型的用法。
 
+---
 
 ### 细节规范细节 | Code Style Tips
 - 使用 `sc.hasNextInt()` 而不是 `sc.hasNext()`，更严谨，避免非整数输入导致异常。
