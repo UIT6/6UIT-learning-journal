@@ -4,7 +4,7 @@
 你的任务是计算若干整数的和。  
 representing the number of integers that follow.
 
-**输入描述 | Input**  
+**输入描述 | Input**   
 - 每行第一个整数为`N`，接下来N行每行先输入一个整数`M`，再在同一行输入`M`个整数
 Each group of input begins with an integer`N`,representing the lines of intehers that follow.
 Each line of input begins with an integer `M`, representing the number of integers that follow.
