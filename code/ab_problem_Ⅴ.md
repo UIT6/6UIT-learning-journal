@@ -84,7 +84,9 @@ if (line.isEmpty()) continue;//遇到空行跳过
 int N = Integer.parseInt(line)//把这行的输入当成数字N
 ```
 **1、 `.trim()`去掉这一行开头和结尾的所有空格、制表符（\t）和回车换行（\n）**
+
 **2、 `line.isEmpty()`检查这一行是不是空的。**
+
 **3、`Integer.parseInt(line)`把刚刚读取到的一行字符串，转换成一个整数。**
 
 ```
