@@ -78,7 +78,7 @@ public class Main {
 }
 ```
 ## 知识点总结 | Key Points Learned
-###1、
+**1、
 ```
 String line = sc.nextLine().trim();//先读一整行，清理干净空格
 ```
