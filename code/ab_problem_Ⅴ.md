@@ -50,7 +50,7 @@ Each line of input begins with an integer `M`, representing the number of intege
 只保证组内每行数据的和之间有空行，两组数据之间并没有空行！
 ```
 
-## 我的解法（法一） | My Solution
+## 我的解法（法一） | My Solution Ⅰ
 
 ```java
 import java.util.Scanner;
@@ -94,17 +94,43 @@ if(sc.hasNextLine()) sc.nextLine();
 ```
 **4、每组数据结束后，输入流中可能残留一个没吃掉的回车符，为了保证输入流状态正常，顺手检查一下`sc.hasNextLine()`，如果有多余的换行，就“吃掉”它`sc.nextLine()`。**
 
+## 我的解法（法二） | My Solution Ⅱ
+
+```java
+while(sc.hasNextLine()){
+    String line = sc.nextLine().trim();//把读到的一整行去除首尾空白后检查
+    if (line.isEmpty()) continue;//如果是空行，就跳过不处理，继续读取下一行。
+    int N = Integer.parseInt(line);
+    for(int i = 0; i < N; i++) {
+        String[] parts =sc.nextLine().trim().split("\\s+");//转化为数组，详见知识点1
+        int M = Integer.parseInt(parts[0]);//取出数组中第一个元素转化为整数M，详见知识点2
+        int sum = 0;
+        for(int j = 1; j <= M; j++){//从第二个元素开始遍历
+            sum += Integer.parseInt(parts[j]);
+        }
+        System.out.println(sum);
+        if(i<N - 1) System.out.println();
+    }
+}
+```
 ### 知识点总结 | Key Points Learned
+```
+String[] parts =sc.nextLine().trim().split("\\s+");//转化为数组，详见知识点1
+int M = Integer.parseInt(parts[0]);//取出数组中第一个元素转化为整数M，详见知识点2
+```
+ ##1.`split("\\s+")`将字符串按空白字符拆分成数组。##
+ - `.split`是把一个字符串按照指定分隔符拆分成多个部分，返回一个字符串数组 
+ - `("\\s+")`是一个正则表达式，表示“一个或多个空白字符”。
+ ##2.`(parts[0]) `取的是当前行的第一个数字##
 
-#### 1. hasNextInt（）
-##### 使用 while(sc.hasNextLine()) 的原因
-- 能处理完整的一组输入：会等待一行输入结束后再进行处理，符合题目按行输入的逻辑，可以清晰地判断是否进入了新的一组测试数据。
-##### 使用 while(sc.hasNextInt()) 存在的问题
-- 无法区分不同组数据：只关注下一个标记是否为整数，它不能识别一组输入的结束和新一组输入的开始，不能很好地处理按行组织的结构，可能会造成数据读取混乱。
+ 
+ ##3. hasNextLine（）##
+-  使用 `while(sc.hasNextLine()) `的原因: 能处理完整的一组输入：会等待一行输入结束后再进行处理，符合题目按行输入的逻辑，可以清晰地判断是否进入了新的一组测试数据。
+-  使用 `while(sc.hasNextInt())`存在的问题: 无法区分不同组数据：只关注下一个标记是否为整数，它不能识别一组输入的结束和新一组输入的开始，不能很好地处理按行组织的结构，可能会造成数据读取混乱。
 
-#### 2. 避免多个while循环
-- 特别注意：**可以使用 for 循环替代 while(N-- > 0) 循环**。
-- 使用 for 循环 for (int i = 0; i < N; i++) 替代 while(N-- > 0) 来控制每组数据的行数
+## 4. 避免多个 while 循环 ##
+- 特别注意：**可以使用 `for `循环替代` while(N-- > 0) `循环**。
+- 使用 for 循环` for (int i = 0; i < N; i++)` 替代 `while(N-- > 0) `来控制每组数据的行数
 
 
 ---
