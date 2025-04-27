@@ -78,23 +78,19 @@ public class Main {
 }
 ```
 ## 此解法知识点总结 | Key Points Learned
-**1、 `.trim()`去掉这一行开头和结尾的所有空格、制表符（\t）和回车换行（\n）**
 ```
 String line = sc.nextLine().trim();//先读一整行，清理干净空格
-```
-**2、 `line.isEmpty()`检查这一行是不是空的。**
-```
 if (line.isEmpty()) continue;//遇到空行跳过
-```
-**3、`Integer.parseInt(line)`把刚刚读取到的一行字符串，转换成一个整数。**
-```
 int N = Integer.parseInt(line)//把这行的输入当成数字N
 ```
+**1、 `.trim()`去掉这一行开头和结尾的所有空格、制表符（\t）和回车换行（\n）**
+**2、 `line.isEmpty()`检查这一行是不是空的。**
+**3、`Integer.parseInt(line)`把刚刚读取到的一行字符串，转换成一个整数。**
 
-**4、每组数据结束后，输入流中可能残留一个没吃掉的回车符，为了保证输入流状态正常，顺手检查一下`sc.hasNextLine()`，如果有多余的换行，就“吃掉”它`sc.nextLine()`。**
 ```
 if(sc.hasNextLine()) sc.nextLine();
 ```
+**4、每组数据结束后，输入流中可能残留一个没吃掉的回车符，为了保证输入流状态正常，顺手检查一下`sc.hasNextLine()`，如果有多余的换行，就“吃掉”它`sc.nextLine()`。**
 
 ### 知识点总结 | Key Points Learned
 
