@@ -46,7 +46,7 @@ representing the number of integers that follow.
 
 4
 只保证组内每行数据的和之间有空行，两组数据之间并没有空行！
----
+```
 
 ## 我的解法 | My Solution
 
@@ -76,7 +76,7 @@ public class Main {
 }
 ```
 
----
+```
 
 ## 知识点总结 | Key Points Learned
 
