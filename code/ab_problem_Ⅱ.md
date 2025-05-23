@@ -33,7 +33,7 @@
 ## 我的解答 (My Solution)
 
 ```java
-import java.util.*;
+import java.util.*; //星号（*）表示导入java.util包中的所有类
 
 public class Main {
     public static void main(String[] args) {
