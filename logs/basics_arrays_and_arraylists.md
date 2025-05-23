@@ -1,4 +1,3 @@
-# Java 数组与 ArrayList 笔记
 
 ---
 
