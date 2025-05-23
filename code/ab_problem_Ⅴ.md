@@ -132,6 +132,32 @@ int M = Integer.parseInt(parts[0]);//取出数组中第一个元素转化为整�
 - 特别注意： **可以使用 `for `循环替代` while(N-- > 0) `循环 **。
 - 使用 for 循环` for (int i = 0; i < N; i++)` 替代 `while(N-- > 0) `来控制每组数据的行数
 
+##评论区便于理解的解法（法三） | A beginner-friendly approach Ⅲ
+```java
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        while (sc.hasNextInt()) {
+            int N = sc.nextInt();      // 读取本组数据的行数 N
+            sc.nextLine();             // 清理掉 nextInt() 后面的换行符，见法一知识点四
+            while (N > 0) {
+                int M = sc.nextInt();  // 读取这一行的整数个数 M
+                int sum = 0;           // 用于保存 M 个数的和
+
+                while (M-- > 0) {//读M个数，累加求和
+                    sum += sc.nextInt();
+                }
+                System.out.println(sum);
+
+                if (N-- > 1) {//先比较再自减，可以用来判断当前是不是到最后一行了
+                    System.out.println();//不是倒一（高于等于倒数第二行）则输出一个空行分隔，避免再组之间输出空格
+                }
+            }
+        }
+    }
+}
 
 ---
  
