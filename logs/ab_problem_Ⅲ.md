@@ -53,7 +53,7 @@ if (a >= b) {
 | 运算符 (Operator) | 含义 (Meaning)                      |
 |:-----------------|:-----------------------------------|
 | `&&`             | 与 (AND)：两个条件都为真，结果才为真 (Both true → true) |
-| `||`             | 或 (OR)：有一个为真，结果就为真 (Either true → true)  |
+| &#124;&#124;     | 或 (OR)：有一个为真，结果就为真 (Either true → true)  |
 | `!`              | 非 (NOT)：取反 (Negate the condition) |
 
 **示例 (Example)：**
