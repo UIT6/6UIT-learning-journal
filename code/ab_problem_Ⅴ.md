@@ -132,7 +132,7 @@ int M = Integer.parseInt(parts[0]);//取出数组中第一个元素转化为整�
 - 特别注意： **可以使用 `for `循环替代` while(N-- > 0) `循环 **。
 - 使用 for 循环` for (int i = 0; i < N; i++)` 替代 `while(N-- > 0) `来控制每组数据的行数
 
-##评论区便于理解的解法（法三） | A beginner-friendly approach Ⅲ
+## 评论区便于理解的解法（法三） | A beginner-friendly approach Ⅲ
 ```java
 import java.util.Scanner;
 
@@ -159,5 +159,6 @@ public class Main {
     }
 }
 
+```
 ---
  
