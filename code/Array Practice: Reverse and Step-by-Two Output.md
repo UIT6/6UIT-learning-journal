@@ -139,5 +139,19 @@ public class Main {
 * `ArrayList<Integer>` 是可变长度的整型列表，适合不确定长度的数据。
 * 使用 `for (int i = 0; i < n; i++)` 可以逐个读入数组。
 * `System.out.print()` 不换行，`System.out.println()` 换行。
+* 一个很适合初学者学习的隔位输出方法：
+```java
+for (int i = 0; i < n; i++ ){      //该循环遍历数组中下标从0到n-1的每一个元素
+
+    if(i % 2 == 0){                //索引为偶数才输出
+        System.out.print(nums[i]);
+
+        //若i在数组倒数第二个元素的前面，则需要在当前元素后打空格。这样避免了在最后一个元素的后面多加空格。
+        if(i < nums.length - 2 ){
+            System.out.print(" ");
+        }
+    }
+}
+```
 
 ---
