@@ -39,7 +39,7 @@ Xiaoming is troubled and asks for your help to solve this problem.
 
 ---
 
-## 题目的解法 | My Solution
+## 😀 题目的解法 | My Solution
 
 ```java
 import java.util.*;
@@ -67,7 +67,7 @@ public class Main {
 
 ---
 
-## 知识点总结 | Key Points Learned
+## 🎯知识点总结 | Key Points Learned
 
 ### 1. `int tmp = n % 10;`
 
@@ -97,7 +97,7 @@ public class Main {
 
 
 
-## 评论区的解法 | Other Solution
+## 😀 评论区的解法 | Other Solution
 
 ```java
 import java.util.Scanner;
