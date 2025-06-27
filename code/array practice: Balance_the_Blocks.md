@@ -77,7 +77,7 @@ public class Main {
             int result = 0;
 
             // 计算比平均值多出的积木数
-            for(int height : list) {
+            for(int height : list) {  //“for-each循环”，把list中的所有元素遍历，赋值给变量 height，然后进行大括号中的指令
                 if(height > avg) {
                     result += (height - avg);
                 }
@@ -98,5 +98,5 @@ public class Main {
 * 只计算高于平均值的差值；
 * 注意输出格式：每组结果后要换行；
 * `ArrayList` 和 `Scanner` 的基本用法。
-
+* for-each循环，用来简洁地遍历 数组或集合 中的所有元素。
 ---
