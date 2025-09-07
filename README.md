@@ -2,16 +2,6 @@
 
 ## 📚 Curriculum Mapping · 课程对照学习计划
 
-This learning journey is designed to prepare for the **MSc in Computer Science (Conversion)** at **University College Dublin (UCD)**.  
-本项目对应于我即将就读的**都柏林大学学院计算机科学（转换）硕士**课程，提前预习核心模块内容，建立编程基础。
-
-
----
-
-# 6UIT-learning-journal
-
-## 📚 Curriculum Mapping · 课程对照学习计划
-
 ### 1. Web Application Development
 
 * Develop client-side applications using HTML and CSS
