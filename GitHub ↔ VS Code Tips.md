@@ -188,7 +188,12 @@ VS Code Git 面板：点击左侧 Source Control 图标，可以直接 stage/com
 
 保持文件后缀：Markdown 文件必须是 .md 才能渲染。
 
+
+
+
 GitHub 文件夹与 VS Code 文件夹同步：
+
+---
 
 修改完本地文件 → git add → git commit → git push 上传。
 
