@@ -1,200 +1,74 @@
----
+# VSCode 与 GitHub 操作小技巧
 
-# GitHub 与 VS Code 常用操作技巧
-
-## 1️⃣ 打开仓库
-- **前提**：已经在 GitHub 上创建仓库，并在本地 clone（或打开）到 VS Code。
-- **步骤**：
-  1. 在 VS Code 里点击 **File → Open Folder**。
-  2. 选择你的仓库文件夹（例如 `6UIT-learning-journal`）。
-- **提示**：确保文件夹里有 `.git` 文件夹，否则 VS Code 识别不了 Git 仓库。
-
-## 2️⃣ 查看 Git 状态
+ 1. 配置 Git
 ```bash
-git status
-````
+# 设置用户名和邮箱（只需设置一次）
+git config --global user.name "你的名字"
+git config --global user.email "你的邮箱"
 
-* 查看哪些文件被修改、哪些是未跟踪（Untracked）。
+# 检查配置
+git config --list
 
-## 3️⃣ 添加修改到暂存区（Stage）
-
-```bash
-git add <文件名>
 ```
-
-* 例如：
-
-```bash
-git add 2025-09-09.md
-```
-
-* **全部文件**：
-
-```bash
-git add .
-```
-
-## 4️⃣ 提交修改（Commit）
-
-```bash
-git commit -m "写你的本次修改说明"
-```
-
-* 示例：
-
-```bash
-git commit -m "更新 Web Development 2025/09/08 实时笔记"
-```
-
-## 5️⃣ 上传到 GitHub（Push）
-
-```bash
-git push
-```
-
-* 如果提示输入账号/密码，可以使用 GitHub Personal Access Token（PAT）替代密码。
-
-## 6️⃣ 拉取 GitHub 上最新文件（Pull）
-
-```bash
-git pull
-完全可以，这样非常高效！我帮你整理一份 **GitHub ↔ VS Code 常用操作技巧笔记**，用 Markdown 写好，你直接放到你的仓库里就行。你以后更新文件或打开最新内容可以直接参考，省去每次问我指令的麻烦。
 
 ---
 
-````markdown
-# GitHub 与 VS Code 常用操作技巧 / GitHub ↔ VS Code Tips
-
-## 1️⃣ 打开仓库
-- **前提**：已经在 GitHub 上创建仓库，并在本地 clone（或打开）到 VS Code。
-- **步骤**：
-  1. 在 VS Code 里点击 **File → Open Folder**。
-  2. 选择你的仓库文件夹（例如 `6UIT-learning-journal`）。
-- **提示**：确保文件夹里有 `.git` 文件夹，否则 VS Code 识别不了 Git 仓库。
-
-## 2️⃣ 查看 Git 状态
-```bash
-git status
-````
-
-* 查看哪些文件被修改、哪些是未跟踪（Untracked）。
-
-## 3️⃣ 添加修改到暂存区（Stage）
+ 2. 克隆仓库
 
 ```bash
-git add <文件名>
+git clone <仓库地址>
+# 示例：
+git clone https://github.com/username/repo.git
 ```
-
-* 例如：
-
-```bash
-git add 2025-09-09.md
-```
-
-* **全部文件**：
-
-```bash
-git add .
-```
-
-## 4️⃣ 提交修改（Commit）
-
-```bash
-git commit -m "写你的本次修改说明"
-```
-
-* 示例：
-
-```bash
-git commit -m "更新 Web Development 2025/09/08 实时笔记"
-```
-
-## 5️⃣ 上传到 GitHub（Push）
-
-```bash
-git push
-```
-
-* 如果提示输入账号/密码，可以使用 GitHub Personal Access Token（PAT）替代密码。
-
-## 6️⃣ 拉取 GitHub 上最新文件（Pull）
-
-```bash
-git pull
-完全可以，这样非常高效！我帮你整理一份 GitHub ↔ VS Code 常用操作技巧笔记，用 Markdown 写好，你直接放到你的仓库里就行。你以后更新文件或打开最新内容可以直接参考，省去每次问我指令的麻烦。
-
-# GitHub 与 VS Code 常用操作技巧 / GitHub ↔ VS Code Tips
-
-## 1️⃣ 打开仓库
-- **前提**：已经在 GitHub 上创建仓库，并在本地 clone（或打开）到 VS Code。
-- **步骤**：
-  1. 在 VS Code 里点击 **File → Open Folder**。
-  2. 选择你的仓库文件夹（例如 `6UIT-learning-journal`）。
-- **提示**：确保文件夹里有 `.git` 文件夹，否则 VS Code 识别不了 Git 仓库。
-
-## 2️⃣ 查看 Git 状态
-```bash
-git status
-
-
-查看哪些文件被修改、哪些是未跟踪（Untracked）。
-
-3️⃣ 添加修改到暂存区（Stage）
-git add <文件名>
-
-
-例如：
-
-git add 2025-09-09.md
-
-
-全部文件：
-
-git add .
-
-4️⃣ 提交修改（Commit）
-git commit -m "写你的本次修改说明"
-
-
-示例：
-
-git commit -m "更新 Web Development 2025/09/08 实时笔记"
-
-5️⃣ 上传到 GitHub（Push）
-git push
-
-
-如果提示输入账号/密码，可以使用 GitHub Personal Access Token（PAT）替代密码。
-
-6️⃣ 拉取 GitHub 上最新文件（Pull）
-git pull
-
-
-保证本地仓库与 GitHub 同步，尤其在多人协作或你在别的电脑更新过仓库时。
-
-7️⃣ 查看历史版本（History）
-
-在 VS Code 左侧 Source Control 或者右键文件选择 Open Timeline。
-
-或在终端：
-
-git log
-
-8️⃣ 小技巧
-
-Markdown 预览：Ctrl + Shift + V 或右键选择 Open Preview。
-
-VS Code Git 面板：点击左侧 Source Control 图标，可以直接 stage/commit/push/pull，不用命令行。
-
-保持文件后缀：Markdown 文件必须是 .md 才能渲染。
-
-
-
-
-GitHub 文件夹与 VS Code 文件夹同步：
 
 ---
 
-修改完本地文件 → git add → git commit → git push 上传。
+ 3. VSCode 打开项目
 
-GitHub 上有更新 → git pull 拉取到本地。
+1. 打开 VSCode → File → Open Folder → 选择仓库目录
+2. 左侧 Source Control 面板显示修改状态
+
+---
+
+## 4. 常用 Git 命令
+
+| 操作     | 命令                            | 说明                   |
+| ------ | ----------------------------- | -------------------- |
+| 查看状态   | `git status`                  | 显示修改文件状态             |
+| 添加文件   | `git add <文件名>` 或 `git add .` | 将修改加入暂存区             |
+| 提交修改   | `git commit -m "说明"`          | 提交到本地仓库              |
+| 推送到远程  | `git push origin main`        | 上传到 GitHub (main 分支) |
+| 拉取远程更新 | `git pull origin main`        | 同步远程仓库最新内容           |
+
+---
+
+ 5. VSCode 内操作
+
+| 操作    | 方法                                          |
+| ----- | ------------------------------------------- |
+| 提交修改  | Source Control → `+` 添加 → 输入提交信息 → √ Commit |
+| 推送/拉取 | 左下角 `…` 菜单 → Pull / Push                    |
+| 分支管理  | 左下角分支名 → 新建/切换分支                            |
+
+---
+
+## 6. 小技巧
+
+* 每次修改前先 `git pull` 避免冲突
+* VSCode 自动提示 Git 状态，非常直观
+* 推荐安装插件 **GitLens** 查看历史和贡献者
+* 常用快捷键：
+
+  * `Ctrl + ~`：打开终端
+  * `Ctrl + Shift + G`：打开 Source Control
+
+---
+
+## 7. 推荐流程
+
+1. `git pull origin main` → 拉取远程更新
+2. 修改/编辑文件
+3. `git add .` → 添加修改
+4. `git commit -m "说明"` → 提交
+5. `git push origin main` → 上传到远程
+
