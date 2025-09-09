@@ -1,5 +1,29 @@
 # VSCode 与 GitHub 操作小技巧
 
+# 快速提醒
+## 1. 查看状态
+git status
+
+## 2. 添加修改（如果有修改）
+git add .
+
+## 3. 提交
+git commit -m "说明"
+
+## 4. 拉取远程更新（必要时）
+git pull origin main --no-edit
+
+## 5. 推送到远程
+git push origin main
+
+
+
+
+
+
+---
+# tips集合
+---
  1. 配置 Git
 ```bash
 # 设置用户名和邮箱（只需设置一次）
@@ -30,7 +54,7 @@ git clone https://github.com/username/repo.git
 
 ---
 
-## 4. 常用 Git 命令
+ 4. 常用 Git 命令
 
 | 操作     | 命令                            | 说明                   |
 | ------ | ----------------------------- | -------------------- |
@@ -52,7 +76,7 @@ git clone https://github.com/username/repo.git
 
 ---
 
-## 6. 小技巧
+ 6. 小技巧
 
 * 每次修改前先 `git pull` 避免冲突
 * VSCode 自动提示 Git 状态，非常直观
@@ -64,7 +88,7 @@ git clone https://github.com/username/repo.git
 
 ---
 
-## 7. 推荐流程
+ 7. 推荐流程
 
 1. `git pull origin main` → 拉取远程更新
 2. 修改/编辑文件
