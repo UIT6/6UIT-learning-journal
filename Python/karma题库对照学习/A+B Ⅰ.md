@@ -65,7 +65,7 @@ while True:
 ```
 ---
 
-## **Python 知识点总结 **
+## **Python 知识点总结**
 
 1. **模块导入 (Module Import)**
 
