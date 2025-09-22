@@ -21,7 +21,7 @@
 
 3. **Provides a controlled and efficient environment for execution of programs**  
    - 提供**受控、高效的程序执行环境**  
-
+Operating-System/course/notes
 4. **Provides mechanisms (functionality) and policies (rules) to manage system resources**  
    - 提供机制 + 策略，管理系统资源  
 
