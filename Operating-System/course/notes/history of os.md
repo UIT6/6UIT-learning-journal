@@ -1,4 +1,4 @@
-
+# 实时笔记部分
  - 打孔机（无os，程序员直接操作硬件，）→NAA I/O（第一个操作系统，。实例：IBM 704）→ 
  - Mainframe(大型机)，Batch System批操作系统开始出现
  - Multiprogramming(多道程序设计，可以同时管理多个作业，实例：IBM System/360 + OS/360) → Timesharing(分时系统，Time Multiplexing将CPU时间分为小段，让每个人觉得自己在独占电脑；增加了交互性)，实例：MULTICS/UNIX
