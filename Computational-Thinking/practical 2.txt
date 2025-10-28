@@ -1,0 +1,22 @@
+Personal Reflection
+
+
+I thought of the movie Roses I watched a few days ago. In the film, the couple had also installed a smart voice assistant at home. When their conflict escalated, the system was misused in dangerous ways. For example, the male character locked the female character in the bedroom and played loud noises through the smart assistant, preventing her from giving any further commands and even threatening her life. He also imitated her voice to gain access to her social media accounts and private information. In another scene, when there was a gas leak, the smart speaker was instructed to light a candle, which could have caused a fire or even an explosion.
+
+From a computational thinking perspective, these scenarios reveal several issues:
+	•	Decomposition: If we break down the problem, the risks stem from multiple aspects, such as “voice recognition being spoofed,” “lack of contextual awareness,” and “no risk evaluation mechanism before executing commands.”
+	•	Pattern Recognition: A common pattern is that the system executes human commands without verifying their authenticity or assessing their safety.
+	•	Abstraction: The abstract problem here is: how to balance “convenience” and “safety”? Human-computer interaction should not rely solely on a “command–execution” logic but must be constrained by contextual rules.
+	•	Algorithmic Thinking: We can design rules or algorithms to mitigate these risks. For instance: when a person is detected inside the room, the system should not allow long-term locking; when gas leakage is detected, the system should disable fire-triggering operations; when unusual voiceprints or new environments are detected, multi-factor authentication should be required.
+
+This suggests that full automation alone is not safe. It is necessary to combine human intervention with layered safety mechanisms, such as password protection, backup mechanical keys, and emergency physical switches, to improve the trustworthiness and sustainability of smart home systems.
+
+
+This task helped me realize that sustainability in smart homes is not only about saving energy but also about building trust and ensuring long-term usability. 
+I understood that security threats like malware can undermine both efficiency and user confidence. These threats not only endanger the user’s physical safety but also undermine their psychological trust in the smart home system.
+ I also learned the importance of combining automation with human judgment: automation can handle routine threats quickly, while humans are needed to resolve more complicated issues.
+Combining this with our group discussion, I further realized that practical mitigation strategies include downloading applications only from official channels, keeping firmware and apps updated, and purchasing devices from trusted sources. Passwords play a crucial role: when the device is connected to the Internet, strong, regularly updated passwords with multi-factor authentication defend against remote attacks; when offline, passwords focus on preventing misuse within the household, such as accidental operation by children or misuse by family members. Additionally, intelligent monitoring systems that recognize normal user behavior and flag anomalous actions can enhance safety.
+
+Regarding automation vs. human intervention, I learned that human involvement is essential. While automation can quickly handle routine threats, human oversight is necessary for complex decisions, such as setting secure policies, inspecting device logs, and deciding on physical safety measures. For long-term sustainability, combining automation with human judgment ensures that smart homes remain efficient, safe, and trustworthy over time.
+
+Overall, this task helped me understand that smart home sustainability depends not only on energy efficiency but also on trust, long-term usability, and robust security design. It reinforced the idea that both computational thinking and careful human oversight are critical to managing risks in a connected environment.

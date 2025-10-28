@@ -101,7 +101,8 @@ t\[City] = Roma
 
 ## 参照完整性约束（Referential Integrity Constraints）
 
-- 保证外键值必须在被引用关系中存在。  
+- 保证外键值必须在被引用关系中存在。
+- * Foreign key referencing multiple attributes OK.  
 
 **违反示例**  
 

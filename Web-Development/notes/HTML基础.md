@@ -1,6 +1,7 @@
 # Web Development - 2025/09/15
 
 ---
+[课件 html part1](https://github.com/UIT6/6UIT-learning-journal/blob/d375755ca12da1e8aa9bf0948cf485ff1a01d726/Web-Development/files/Lecture%202%20-%20html%20part%201.pdf)
 
 ## 1️⃣ 实时笔记
 - 关键词 / Keywords:

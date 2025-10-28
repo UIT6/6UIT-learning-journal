@@ -1,3 +1,4 @@
+[FILES](https://github.com/UIT6/6UIT-learning-journal/blob/d375755ca12da1e8aa9bf0948cf485ff1a01d726/Web-Development/files/Lecture%203%20-%20CSS%20part%201.pdf)
 
 ## 1️⃣ CSS 概念与用途
 
